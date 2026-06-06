@@ -1,0 +1,167 @@
+/* Ajuste en tu Main.css */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem; /* Reduje un poco el gap para dar espacio a pantallas pequeñas */
+    padding: 0 10%;
+}
+
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column-reverse;
+        justify-content: center; /* Centra el contenido verticalmente */
+        padding-top: 5rem; /* Usar 'rem' es más responsivo que 'px' */
+        padding-bottom: 2rem;
+    }
+}
+
+.hero__content {
+  max-width: 700px;
+}
+
+.hero__subtitle {
+  color: #22d3ee;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.hero__title {
+  font-size: 4rem;
+  font-weight: 800;
+  color: white;
+  line-height: 1.1;
+}
+
+.hero__title span {
+  color: #22d3ee;
+}
+
+.hero__profession {
+  font-size: 2rem;
+  color: #cbd5e1;
+  margin-top: 10px;
+}
+
+.hero__description {
+  margin-top: 25px;
+  color: #94a3b8;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.hero__buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 35px;
+}
+
+.btn {
+  padding: 14px 28px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: #22d3ee;
+  color: #0f172a;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(34, 211, 238, 0.3);
+}
+
+.btn-secondary {
+  border: 2px solid #22d3ee;
+  color: #22d3ee;
+}
+
+.btn-secondary:hover {
+  background: #22d3ee;
+  color: #0f172a;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    text-align: center;
+    padding: 0 5%;
+  }
+
+  .hero__title {
+    font-size: 2.8rem;
+  }
+
+  .hero__profession {
+    font-size: 1.4rem;
+  }
+
+  .hero__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+}
+
+.hero__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__image img {
+    width: 350px;
+    height: 350px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 4px solid #22d3ee;
+
+    box-shadow:
+        0 0 20px rgba(34, 211, 238, .4),
+        0 0 50px rgba(34, 211, 238, .2);
+
+    transition: .3s;
+}
+
+.hero__image img:hover {
+    transform: scale(1.03);
+}
+
+@media (max-width: 900px) {
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-top: 120px;
+    }
+
+    .hero__image img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .hero__buttons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+  .hero__title {
+    font-size: 2.2rem; /* Ajuste para pantallas pequeñas */
+  }
+  
+  .hero__description {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
