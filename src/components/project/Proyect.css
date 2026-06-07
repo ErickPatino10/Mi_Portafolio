@@ -1,111 +1,121 @@
-/* ===== SECCIÓN PROYECTOS ===== */
+
 .proyect {
-    padding: 100px 5%;
+    padding: 60px 5%;
     background: #0f172a;
+    width: 100%;
 }
 
-/* Título principal de la sección */
 .proyect__main-title {
     color: #f8fafc;
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
 .proyect__container {
-    max-width: 1200px;
+    max-width: 1200px; 
     margin: 0 auto;
+    width: 100%;
 }
 
-/* Tarjeta principal con efecto neón y animación */
 .proyect__card {
     background: rgba(30, 41, 59, 0.4);
-    padding: 2.5rem;
+    padding: 20px;
     border-radius: 20px;
-    border: 1px solid rgba(34, 211, 238, 0.2);
+    border: 1px solid rgba(56, 189, 248, 0.3);
     display: flex;
-    flex-wrap: wrap;
-    gap: 3rem;
-    align-items: center;
-    transition: all 0.5s ease; /* Transición suave para el acercamiento */
+    flex-direction: column; 
+    gap: 20px;
+    transition: 0.4s;
 }
 
-/* Efecto de acercamiento y luz neón al pasar el mouse */
 .proyect__card:hover {
-    transform: scale(1.02); /* Acercamiento sutil */
     border-color: #38bdf8;
-    box-shadow: 0 0 30px rgba(56, 189, 248, 0.3); /* Resplandor neón */
-}
-
-.proyect__title {
-    color: #38bdf8;
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
 }
 
 .proyect__img {
     width: 100%;
-    max-width: 500px;
-    border-radius: 10px;
+    height: auto;
+    border-radius: 12px;
     border: 1px solid #38bdf8;
+    display: block;
+}
+
+.proyect__title {
+    color: #38bdf8;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.proyect__description {
+    color: #e2e8f0;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+
+.proyect__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.btn {
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
     transition: 0.3s;
 }
 
-.proyect__content { 
-    flex: 1; 
-    min-width: 300px; 
+.btn-primary {
+    background: #38bdf8;
+    color: #0a0f1e;
 }
 
-.proyect__description { 
-    color: #e2e8f0; 
-    line-height: 1.6; 
-    font-size: 1.1rem; 
-    margin-bottom: 2rem; 
+.btn-primary:hover {
+    background: #0ea5e9;
+    transform: translateY(-2px);
 }
 
-/* ===== BOTONES ===== */
-.proyect__buttons { 
-    display: flex; 
-    gap: 15px; 
+.btn-secondary {
+    border: 1px solid #38bdf8;
+    color: #38bdf8;
 }
 
-.btn { 
-    padding: 12px 24px; 
-    border-radius: 8px; 
-    text-decoration: none; 
-    font-weight: 600; 
-    transition: 0.3s; 
+.btn-secondary:hover {
+    background: rgba(56, 189, 248, 0.1);
+    transform: translateY(-2px);
 }
 
-.btn-primary { 
-    background: #38bdf8; 
-    color: #0a0f1e; 
-    box-shadow: 0 0 10px rgba(56, 189, 248, 0.4); 
-}
 
-.btn-primary:hover { 
-    background: #0ea5e9; 
-    transform: translateY(-3px); 
-}
-
-.btn-secondary { 
-    border: 1px solid #38bdf8; 
-    color: #38bdf8; 
-}
-
-.btn-secondary:hover { 
-    background: rgba(56, 189, 248, 0.1); 
-    transform: translateY(-3px); 
-}
-
-/* ===== RESPONSIVE ===== */
-@media (max-width: 768px) {
-    .proyect__card { 
-        flex-direction: column; 
-        text-align: center; 
+@media (min-width: 900px) {
+    .proyect__card {
+        flex-direction: row; 
+        padding: 40px;
+        align-items: center;
+        gap: 40px;
     }
-    
-    .proyect__main-title {
-        font-size: 2.2rem;
+
+    .proyect__img {
+        width: 50%; 
+    }
+
+    .proyect__content {
+        flex: 1; 
+    }
+
+    .proyect__title, .proyect__description {
+        text-align: left; 
+    }
+
+    .proyect__buttons {
+        flex-direction: row; 
+        justify-content: flex-start;
     }
 }

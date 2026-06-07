@@ -6,7 +6,7 @@ export const Footer = () => {
     <footer className="footer">
       <div className="footer__container">
         
-        {/* Columna 1: Información */}
+        {}
         <div className="footer__section">
           <h3>Erick Patiño</h3>
           <p>Proyecto desarrollado como parte de la formación académica en la EPN.</p>
@@ -16,7 +16,7 @@ export const Footer = () => {
           </div>
         </div>
 
-        {/* Columna 2: Redes Sociales */}
+        {}
         <div className="footer__section">
           <h3>Sígueme</h3>
           <div className="footer__social">

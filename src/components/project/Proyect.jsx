@@ -1,11 +1,10 @@
 import "./Proyect.css";
-// Importamos la imagen desde la carpeta assets
 import poliGamarImg from "../../assets/PoliGamer.png"; 
 
 export const Proyect = () => {
   return (
     <section className="proyect" id="project">
-      {/* Título principal de la sección */}
+      {}
       <h1 className="proyect__main-title">Proyectos</h1>
       
       <div className="proyect__container">
@@ -13,7 +12,7 @@ export const Proyect = () => {
           <img src={poliGamarImg} alt="Proyecto PoliGamer" className="proyect__img" />
           
           <div className="proyect__content">
-            {/* Título del proyecto individual */}
+            {}
             <h2 className="proyect__title">PoliGamer</h2>
             
             <p className="proyect__description">

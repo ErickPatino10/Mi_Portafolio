@@ -5,7 +5,6 @@
 
 .skills__grid {
     display: grid;
-    /* Esto obliga a tener siempre 4 columnas iguales en escritorio */
     grid-template-columns: repeat(4, 1fr); 
     gap: 1.5rem;
     max-width: 1000px;
@@ -33,7 +32,7 @@
 }
 
 .skill__icon {
-    font-size: 3.5rem; /* Tamaño grande para el logo */
+    font-size: 3.5rem; 
 }
 
 .skill__name {

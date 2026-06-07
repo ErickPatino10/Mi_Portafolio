@@ -5,30 +5,29 @@
 .about__header { text-align: center; margin-bottom: 3rem; }
 
 .about__title {
-    font-size: 3rem; /* Aumentamos el tamaño */
+    font-size: 3rem; 
     color: white;
     text-align: center;
     margin-bottom: 3rem;
 }
 
-/* Grid de dos columnas */
+
 .about__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
-    align-items: center; /* Alineación vertical perfecta */
+    align-items: center; 
 }
 
 .about__image {
     width: 100%;
-    /* Esto iguala la altura de la imagen a la altura del bloque de texto */
     display: flex; 
 }
 
 .about__image img {
     width: 100%;
-    height: 100%; /* Toma la altura del contenedor */
-    object-fit: cover; /* Corta la imagen para que encaje sin estirarse */
+    height: 100%; 
+    object-fit: cover; 
     border-radius: 20px;
     border: 2px solid #22d3ee;
     box-shadow: 0 0 20px rgba(34, 211, 238, 0.4);
@@ -38,7 +37,6 @@
 
 .about__image img:hover {
     transform: scale(1.02);
-    /* Aumentamos el brillo al pasar el mouse */
     box-shadow: 
         0 0 15px #22d3ee, 
         0 0 30px #22d3ee, 
@@ -57,13 +55,13 @@
     font-size: 1.05rem;
 }
 
-/* Responsividad */
+
 @media (max-width: 768px) {
     .about__wrapper {
         grid-template-columns: 1fr;
         text-align: center;
     }
     .about__image {
-        order: -1; /* Muestra la imagen arriba en móviles */
+        order: -1; 
     }
 }

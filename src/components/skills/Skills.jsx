@@ -1,5 +1,4 @@
 import "./Skills.css";
-// Importamos los iconos necesarios
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaJava, FaGitAlt, FaGithub, FaPython } from "react-icons/fa";
 
 const skillsData = [

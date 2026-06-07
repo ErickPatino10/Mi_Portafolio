@@ -8,7 +8,6 @@
     padding: 40px 0;
 }
 
-/* La línea central */
 .education__timeline::before {
     content: '';
     position: absolute;
@@ -38,11 +37,11 @@
 
 .education__card {
     width: 45%;
-    padding: 25px; /* Aumentado para dar aire */
+    padding: 25px;
     background: rgba(30, 41, 59, 0.5);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 20px;
-    transition: all 0.4s ease; /* Transición suave */
+    transition: all 0.4s ease; 
     cursor: pointer;
 }
 
@@ -59,14 +58,13 @@
     .education__card { width: 85%; margin-left: 70px !important; }
 }
 
-/* Efecto NEÓN al pasar el mouse */
+
 .education__card:hover {
     border-color: #22d3ee;
     box-shadow: 0 0 20px rgba(34, 211, 238, 0.3);
-    transform: translateY(-5px); /* Pequeño salto al pasar el mouse */
+    transform: translateY(-5px); 
 }
 
-/* Mejorar el espaciado interno */
 .education__card-institution {
     margin-bottom: 0.5rem;
     font-size: 1.25rem;
@@ -74,18 +72,18 @@
 
 .education__card-degree {
     color: #94a3b8;
-    margin-bottom: 1.5rem; /* Separación extra antes del periodo */
+    margin-bottom: 1.5rem; 
 }
 
 .education__card-meta {
     display: flex;
     flex-direction: column;
-    gap: 8px; /* Separación entre fecha y dirección */
+    gap: 8px; 
     font-size: 0.9rem;
     color: #cbd5e1;
 }
 
-/* Ajuste de badges */
+
 .education__badge {
     display: inline-block;
     margin-bottom: 1rem;

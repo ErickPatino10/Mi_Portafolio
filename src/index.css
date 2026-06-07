@@ -1,17 +1,12 @@
-/* ===================================================
-   GLOBAL STYLES — Erick Patiño Portfolio
-   =================================================== */
 
-/* ===== CSS RESET ===== */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* ===== ROOT & DARK THEME ===== */
 :root {
-  --color-bg:         #0a0f1e;  /* más oscuro que el navbar (#1e293b) */
+  --color-bg:         #0a0f1e;  
   --color-bg-alt:     #1e293b;
   --color-surface:    #1e293b;
   --color-border:     rgba(56, 189, 248, 0.12);
@@ -24,20 +19,20 @@
   --color-accent-2:   #38bdf8;
   --color-accent-dark:#0891b2;
 
-  /* Typography */
+
   --font-body:    'Segoe UI', system-ui, sans-serif;
   --font-heading: var(--font-body);
   --font-mono:    ui-monospace, Consolas, monospace;
 
-  /* Shadows */
+
   --shadow-sm:  0 1px 3px rgba(0,0,0,0.3);
   --shadow-md:  0 4px 16px rgba(0,0,0,0.4);
   --shadow-glow: 0 0 20px rgba(34,211,238,0.3);
 
-  /* Transitions */
+
   --transition: 0.3s ease;
 
-  /* Navbar height — used for offset */
+
   --navbar-h: 70px;
 
   font-size: 16px;
@@ -51,7 +46,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* ===== BASE ===== */
+
 html {
   scroll-behavior: smooth;
 }
@@ -70,14 +65,13 @@ body {
   flex-direction: column;
 }
 
-/* ===== HEADINGS ===== */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   color: var(--color-heading);
   line-height: 1.2;
 }
 
-/* ===== LINKS ===== */
+
 a {
   color: var(--color-accent);
   text-decoration: none;
@@ -88,13 +82,12 @@ a:hover {
   color: var(--color-accent-2);
 }
 
-/* ===== IMAGES ===== */
 img {
   max-width: 100%;
   display: block;
 }
 
-/* ===== SCROLLBAR (webkit) ===== */
+
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -112,7 +105,7 @@ img {
   background: var(--color-accent);
 }
 
-/* ===== SELECTION ===== */
+
 ::selection {
   background: rgba(34, 211, 238, 0.25);
   color: #fff;

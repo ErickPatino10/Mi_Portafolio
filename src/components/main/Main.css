@@ -1,18 +1,18 @@
-/* Ajuste en tu Main.css */
+
 .hero {
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 2rem; /* Reduje un poco el gap para dar espacio a pantallas pequeñas */
+    gap: 2rem; 
     padding: 0 10%;
 }
 
 @media (max-width: 900px) {
     .hero {
         flex-direction: column-reverse;
-        justify-content: center; /* Centra el contenido verticalmente */
-        padding-top: 5rem; /* Usar 'rem' es más responsivo que 'px' */
+        justify-content: center; 
+        padding-top: 5rem; 
         padding-bottom: 2rem;
     }
 }
@@ -157,7 +157,7 @@
 
 @media (max-width: 480px) {
   .hero__title {
-    font-size: 2.2rem; /* Ajuste para pantallas pequeñas */
+    font-size: 2.2rem; 
   }
   
   .hero__description {
