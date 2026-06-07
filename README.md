@@ -124,7 +124,8 @@ Este portafolio fue optimizado para ofrecer una experiencia rápida, accesible y
 - Construido con React y Vite para maximizar el rendimiento.
 
 ### Evidencia
-¿
+<img width="1430" height="727" alt="image" src="https://github.com/user-attachments/assets/521345cb-78cd-4485-b1b3-3209e3b8e1c5" />
+<img width="1430" height="727" alt="image" src="https://github.com/user-attachments/assets/43a472e4-9429-4516-8857-00097133fa77" />
 
 > Prueba realizada sobre la versión desplegada del portafolio en Netlify utilizando Google PageSpeed Insights.
 
