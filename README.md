@@ -99,12 +99,20 @@ La página cuenta con un diseño moderno, adaptable y organizado en diferentes s
     ├── README.md
     └── vite.config.js
 ```
-
 ## 📊 Rendimiento Web
 
-Este portafolio fue optimizado para ofrecer una experiencia rápida, accesible y eficiente. Se realizaron buenas prácticas de desarrollo enfocadas en el rendimiento, la accesibilidad y el posicionamiento en buscadores (SEO).
+Este portafolio fue optimizado para ofrecer una experiencia rápida, accesible y eficiente en diferentes dispositivos. Se aplicaron buenas prácticas de desarrollo enfocadas en rendimiento, accesibilidad y posicionamiento en buscadores (SEO).
 
-### Resultados de Google PageSpeed Insights
+### 📱 Resultados en Dispositivos Móviles
+
+| Métrica | Puntuación |
+|----------|----------|
+| 🚀 Rendimiento | **92/100** |
+| ♿ Accesibilidad | **94/100** |
+| ✅ Buenas Prácticas | **100/100** |
+| 🔍 SEO | **100/100** |
+
+### 🖥️ Resultados en Escritorio
 
 | Métrica | Puntuación |
 |----------|----------|
@@ -113,23 +121,27 @@ Este portafolio fue optimizado para ofrecer una experiencia rápida, accesible y
 | ✅ Buenas Prácticas | **100/100** |
 | 🔍 SEO | **100/100** |
 
-### Aspectos Destacados
+### ✨ Aspectos Destacados
 
-- Carga rápida de recursos.
-- Optimización de imágenes y archivos estáticos.
-- Estructura semántica para mejorar la accesibilidad.
-- Buenas prácticas de desarrollo web moderno.
-- Excelente optimización para motores de búsqueda (SEO).
-- Diseño responsive para diferentes tamaños de pantalla.
+- Excelente rendimiento y velocidad de carga.
+- Optimización de recursos e imágenes.
+- Diseño responsive para dispositivos móviles y escritorio.
+- Implementación de buenas prácticas de desarrollo web.
+- Estructura accesible para mejorar la experiencia del usuario.
+- SEO optimizado para motores de búsqueda.
 - Construido con React y Vite para maximizar el rendimiento.
 
-### Evidencia
-<img width="1430" height="727" alt="image" src="https://github.com/user-attachments/assets/521345cb-78cd-4485-b1b3-3209e3b8e1c5" />
+### 📸 Evidencias
+
+#### Versión Móvil
+
 <img width="1417" height="732" alt="image" src="https://github.com/user-attachments/assets/a42ccca2-66da-41f0-99ad-f941ded14223" />
 
+#### Versión Escritorio
 
+<img width="1430" height="727" alt="image" src="https://github.com/user-attachments/assets/521345cb-78cd-4485-b1b3-3209e3b8e1c5" />
 
-> Prueba realizada sobre la versión desplegada del portafolio en Netlify utilizando Google PageSpeed Insights.
+> Evaluación realizada con Google PageSpeed Insights sobre la versión desplegada del portafolio en producción.
 
 ---
 
