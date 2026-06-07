@@ -26,7 +26,7 @@ export const Main = () => {
                 </p>
 
                 <div className="hero__buttons">
-                    <a href="#projects" className="btn btn-primary">
+                    <a href="#project" className="btn btn-primary">
                         Ver Proyectos
                     </a>
 

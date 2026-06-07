@@ -1,0 +1,117 @@
+/* ===== SECCIÓN CONTACTO ===== */
+.contact {
+    padding: 80px 5%;
+    background: #0a0f1e;
+}
+
+.contact__main-title {
+    color: #f8fafc;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.contact__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: stretch; /* Asegura que ambas tarjetas tengan la misma altura */
+}
+
+/* Contenedores de tarjetas */
+.contact__form-card, 
+.contact__info-col {
+    background: rgba(30, 41, 59, 0.4);
+    padding: 3rem;
+    border-radius: 20px;
+    border: 1px solid rgba(34, 211, 238, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- LADO IZQUIERDO (Formulario) --- */
+.contact__subtitle { color: white; margin-bottom: 2rem; font-size: 1.5rem; }
+.contact__form { display: flex; flex-direction: column; gap: 20px; flex-grow: 1; }
+.contact__form label { color: #cbd5e1; font-size: 0.9rem; }
+.contact__form input, .contact__form textarea {
+    padding: 15px; border-radius: 10px; background: #0a0f1e; 
+    border: 1px solid #38bdf8; color: white; width: 100%; box-sizing: border-box;
+}
+.btn-send {
+    margin-top: auto; /* Empuja el botón al final de la caja */
+    padding: 15px; background: linear-gradient(90deg, #38bdf8, #8b5cf6); 
+    color: white; border: none; border-radius: 50px; font-weight: bold; 
+    cursor: pointer; transition: 0.3s; font-size: 1rem;
+}
+
+/* --- LADO DERECHO (Mapa y Detalles) --- */
+.contact__info-col {
+    gap: 20px;
+}
+
+.contact__map { 
+    flex-grow: 1; /* El mapa se expande para ocupar todo el espacio disponible */
+    min-height: 350px;
+    width: 100%;
+}
+
+.contact__map iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    border: none;
+}
+
+.contact__details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales para los datos */
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.contact__item { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    gap: 10px; 
+    color: #e2e8f0;
+}
+
+.contact__item span { font-size: 1.8rem; }
+.contact__item p { font-size: 0.85rem; line-height: 1.2; }
+
+/* --- RESPONSIVO --- */
+@media (max-width: 900px) {
+    .contact__container { grid-template-columns: 1fr; }
+    .contact__details { grid-template-columns: 1fr; gap: 20px; }
+}
+
+/* --- ANIMACIÓN NEÓN --- */
+@keyframes neon-glow {
+    0%, 100% {
+        box-shadow: 0 0 10px rgba(56, 189, 248, 0.2), 
+                    inset 0 0 10px rgba(56, 189, 248, 0.1);
+    }
+    50% {
+        box-shadow: 0 0 25px rgba(56, 189, 248, 0.5), 
+                    inset 0 0 15px rgba(56, 189, 248, 0.2);
+    }
+}
+
+/* Aplicar la animación a las tarjetas */
+.contact__form-card, 
+.contact__info-col {
+    animation: neon-glow 4s infinite alternate; /* Efecto de respiración neón */
+    border: 1px solid rgba(56, 189, 248, 0.5); /* Borde más brillante */
+}
+
+/* Efecto al hacer hover (se intensifica más) */
+.contact__form-card:hover,
+.contact__info-col:hover {
+    animation: none; /* Detenemos la animación base al pasar el mouse */
+    box-shadow: 0 0 40px rgba(56, 189, 248, 0.6);
+    border-color: #38bdf8;
+}

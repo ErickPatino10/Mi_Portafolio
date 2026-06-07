@@ -7,44 +7,47 @@ header {
 .navdar__container {
     max-width: 100%;
     padding: 0.9rem 2.5rem;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
-
-    background: rgba(30, 41, 59, 0.97);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-
-    border-bottom: 1px solid rgba(34, 211, 238, 0.2);
-
-    box-shadow:
-        0 2px 12px rgba(0, 0, 0, 0.5),
-        0 1px 0 rgba(34, 211, 238, 0.08);
+    background: rgba(15, 23, 42, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(34, 211, 238, 0.15);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    animation: fadeInDown 0.8s ease-out;
 }
 
-/* ===== LOGO ===== */
+/* ===== LOGO CONTAINER (Logo + Nombre) ===== */
+.navdar__logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.navdar__logo-img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
 .navdar__logo {
     margin: 0;
-
     font-size: 1.6rem;
     font-weight: 700;
-
     color: #38bdf8;
-
-    cursor: pointer;
     transition: all 0.3s ease;
 }
 
-.navdar__logo:hover {
+.navdar__logo-container:hover .navdar__logo {
     color: #0ea5e9;
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 /* ===== MENU ===== */
@@ -52,7 +55,6 @@ header {
     display: flex;
     align-items: center;
     gap: 2rem;
-
     list-style: none;
     margin: 0;
     padding: 0;
@@ -61,134 +63,62 @@ header {
 .navdar__menu a {
     text-decoration: none;
     color: #f8fafc;
-
     font-size: 1rem;
     font-weight: 500;
-
     position: relative;
-
     transition: all 0.3s ease;
+    display: inline-block;
+    padding: 5px 0;
 }
 
-/* Línea animada */
 .navdar__menu a::after {
     content: "";
     position: absolute;
-
     left: 0;
     bottom: -5px;
-
     width: 0;
     height: 2px;
-
     background: #38bdf8;
-
     transition: width 0.3s ease;
 }
 
 .navdar__menu a:hover {
     color: #38bdf8;
+    transform: translateY(-2px);
 }
 
 .navdar__menu a:hover::after {
     width: 100%;
 }
 
-/* ===== TABLET ===== */
-@media (max-width: 900px) {
-
-    .navdar__container {
-        padding: 1rem 1.5rem;
-    }
-
-    .navdar__menu {
-        gap: 1.2rem;
-    }
-
-    .navdar__menu a {
-        font-size: 0.95rem;
-    }
+/* ===== ANIMACIONES ===== */
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
-/* ===== MOBILE ===== */
-@media (max-width: 768px) {
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+    .navdar__container { padding: 1rem 1.5rem; }
+    .navdar__menu { gap: 1.2rem; }
+    .navdar__menu a { font-size: 0.95rem; }
+}
 
+@media (max-width: 768px) {
     .navdar__container {
         flex-direction: column;
         justify-content: center;
         gap: 1rem;
-
         padding: 1rem;
     }
-
-    .navdar__logo {
-        font-size: 1.4rem;
-    }
-
-    .navdar__menu {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1rem;
-    }
-
-    .navdar__menu a {
-        font-size: 0.9rem;
-    }
+    .navdar__logo { font-size: 1.4rem; }
+    .navdar__menu { flex-wrap: wrap; justify-content: center; gap: 1rem; }
+    .navdar__menu a { font-size: 0.9rem; }
 }
 
-/* ===== MOBILE PEQUEÑO ===== */
 @media (max-width: 480px) {
-
-    .navdar__container {
-        padding: 0.8rem;
-    }
-
-    .navdar__logo {
-        font-size: 1.25rem;
-    }
-
-    .navdar__menu {
-        gap: 0.8rem;
-    }
-
-    .navdar__menu a {
-        font-size: 0.8rem;
-    }
+    .navdar__container { padding: 0.8rem; }
+    .navdar__logo { font-size: 1.25rem; }
+    .navdar__menu { gap: 0.8rem; }
+    .navdar__menu a { font-size: 0.8rem; }
 }
-
-.navdar__container {
-    /* ... tus estilos actuales ... */
-    animation: fadeInDown 0.8s ease-out;
-}
-
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.navdar__menu a {
-    /* Añade esto para que el movimiento se sienta más "premium" */
-    display: inline-block;
-    padding: 5px 0;
-}
-
-.navdar__menu a:hover {
-    color: #38bdf8;
-    transform: translateY(-2px); /* Movimiento sutil hacia arriba */
-}
-
-.navdar__container {
-    /* ... */
-    background: rgba(15, 23, 42, 0.7); /* Un poco más transparente */
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(34, 211, 238, 0.15);
-    /* Añade una sombra más sutil pero extensa */
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
-}
-
