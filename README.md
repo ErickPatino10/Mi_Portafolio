@@ -2,6 +2,17 @@
 
 Portafolio personal desarrollado con React y Vite para presentar mi perfil profesional, habilidades técnicas, formación académica, certificaciones y proyectos de desarrollo de software.
 
+## 🌐 Demo en Producción
+
+El portafolio se encuentra desplegado en Netlify y puede visitarse desde el siguiente enlace:
+
+🔗 **Sitio Web:** https://erick-patino-portafolio.netlify.app/
+
+### Vista Previa
+
+<img width="1432" height="6175" alt="image" src="https://github.com/user-attachments/assets/d0b7ba36-625d-45f0-b81f-256779bd7226" />
+
+> Portafolio personal desarrollado con React y Vite para presentar mi perfil profesional, formación académica, habilidades técnicas, certificaciones y proyectos destacados.
 ## 🚀 Descripción
 
 Este proyecto tiene como objetivo mostrar mi experiencia, conocimientos y proyectos realizados como estudiante de Desarrollo de Software en la Escuela Politécnica Nacional.
